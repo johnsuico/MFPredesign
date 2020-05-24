@@ -1,0 +1,90 @@
+/* START INFO STYLING */
+.icon{
+    height: 400px;
+    margin: 5%;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    flex: 1;
+}
+.info-container h2 {
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: 'Cera Pro Bold', sans-serif;
+    margin-bottom: 3%;
+}
+.info-container p {
+    font-size: 1.5vw;
+}
+
+.infoGroup a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+#leftAlign {
+    text-align: left;
+}
+
+/* END INFO STYLING */
+
+/* RESPONSIVE ICONS AND LAYOUT */
+@media screen and (max-width: 1024px) { 
+    .container {
+        width: 80%;
+    }
+    .subContainer {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-container .leftAlign {
+        text-align: center;
+    }
+    #reverseOrder {
+        flex-direction: column-reverse;
+    }
+    .info-container {
+        width: 100%;
+    }
+    .info-container h2 {
+        font-size: 6vw;
+        width: 100%;
+    }
+    .info-container p, .infoGroup a {
+        font-size: 3vw;
+    }
+    #ccicon {
+        height: auto;
+        width: 40%;
+    }
+    #mpicon {
+        height: auto;
+        width: 30%;
+    }
+    #mbicon {
+        height: auto;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .info-container h2 {
+        font-size: 8vw;
+    }
+    .info-container p, .infoGroup a {
+        font-size: 4vw;
+    }
+    #ccicon {
+        height: auto;
+        width: 50%;
+    }
+}
+/* END RESPONSIVE ICONS AND LAYOUT */

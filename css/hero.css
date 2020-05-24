@@ -1,0 +1,93 @@
+/* HERO SECTION STYLING */
+
+/* HOME PAGE */
+#heroHome {
+    background-image: url("../images/homeDark.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HOW TO HELP */
+#heroHTH {
+    background-image: url("../images/hth.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* COMMUNITY PARTNERSHIPS */
+#heroCP {
+    background-image: url("../images/community.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT US */
+#heroAbout {
+    background-image: url("../images/about-us.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallaxBG {
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.heroInfo {
+    color: white;
+    text-align: center;
+}
+
+.heroInfo h1 {
+    font-family: 'Cera Pro Black';
+    font-size: 96px;
+}
+
+.heroInfo p {
+    font-family: 'Cera Pro Light';
+    font-size: 48px;
+    width: 60%;
+    margin: auto;
+}
+
+.heroInfo .singleLine {
+    width: 100%;
+}
+
+/* RESPONSIVE HERO SECTION */
+
+/* For Tablets */
+@media screen and (max-width: 1024px) { 
+    .heroInfo h1 {
+        font-size: 84px;
+    }
+
+    .heroInfo p {
+        margin: auto;
+        width: 80%;
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .heroInfo h1 {
+        font-size: 48px;
+    }
+
+    .heroInfo p {
+        font-size: 26px;
+    }
+}
+/* END RESPONSIVE HERO SECTION*/
+
+/* END HERO SECTION SYLING */

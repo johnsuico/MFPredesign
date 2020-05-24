@@ -1,0 +1,159 @@
+/* Navbar Styling */
+nav {
+    background-color: rgba(255, 255, 255, 0.70);
+    position: absolute;
+    width: 100vw;
+    font-family: 'Cera Pro Bold', sans-serif;
+}
+
+.nav-item-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 70px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    font-size: 22px;
+    font-family: 'Cera Pro Light', sans-serif;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+/* END OF NAV BAR STYLING */
+
+/* BURGER MENU STYLING*/
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/* END OF BURGER MENU STYLING */
+
+/* RESPONSIVE NAV BAR STYLING*/
+/* For Keeping Spacing Between Links*/
+@media screen and (max-width: 1700px) { 
+    .nav-links {
+        width: 60%;
+    }
+}
+
+/* For Tablets */
+@media screen and (max-width: 1024px) { 
+    body {
+        overflow-x: hidden;
+    }
+    .nav-item-container {
+        width: 90%;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .logo h4 {
+        font-size: 30px;
+    }
+    .nav-links {
+        position: fixed;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        background-color: rgba(255, 255, 255, 0.80);
+    }
+    .nav-links li {
+        text-align: center;
+        font-size: 36px;
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+/* For phones*/
+@media screen and (max-width: 768px) { 
+    .logo img {
+        height: 30px;
+    }
+    .logo h4 {
+        font-size: 18px;
+    }
+    .nav-links li {
+        font-size: 24px;
+    }
+}
+
+/* END OF RESPONSIVE NAV BAR STYLING*/
+
+/* FOR BURGER ANIMATIONS */
+.nav-active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle #line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle #line2 {
+    opacity: 0;
+}
+.toggle #line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/* END OF BURGER ANIMATIONS */

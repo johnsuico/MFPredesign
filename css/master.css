@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Cera Pro";
+    src: url("Fonts/Cera\ Pro\ Medium.otf");
+}
+
+@font-face {
+    font-family: "Cera Pro Bold";
+    src: url("Fonts/Cera\ Pro\ Bold.otf");
+}
+
+@font-face {
+    font-family: "Cera Pro Black";
+    src: url("Fonts/Cera\ Pro\ Black.otf");
+}
+
+@font-face {
+    font-family: "Cera Pro Light";
+    src: url("Fonts/Cera\ Pro\ Light.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F7;
+    max-width: 100vw;
+    font-family: 'Cera Pro Light', sans-serif;
+}
+
+.container {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+.subContainer {
+    margin-top: 3%;
+    display: flex;
+}
+
+.info-container .leftAlign {
+    text-align: left;
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    background-color: #575757;
+    margin-top: 3%;
+    height: 5vh;
+}
+
+footer div {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 1024px) { 
+    footer {
+        margin-top: 5%;
+    }
+    footer div {
+        width: 80%;
+        font-size: 2vw;
+    }
+}
