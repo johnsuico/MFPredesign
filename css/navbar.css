@@ -93,12 +93,12 @@ nav {
         font-size: 30px;
     }
     .nav-links {
-        position: fixed;
+        position: absolute;
         right: 0;
-        height: 92vh;
+        height: 30vh;
         top: 8vh;
         display: flex;
-        width: 60%;
+        width: 100%;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
