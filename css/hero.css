@@ -87,6 +87,10 @@
     .heroInfo p {
         font-size: 26px;
     }
+
+    #heroAbout {
+        background-position: 75% 50%;
+    }
 }
 /* END RESPONSIVE HERO SECTION*/
 
