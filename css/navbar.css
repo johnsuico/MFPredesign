@@ -136,6 +136,10 @@ nav {
     transform: translateX(0);
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 @keyframes navLinkFade {
     from {
         opacity: 0;
