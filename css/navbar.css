@@ -1,9 +1,10 @@
 /* Navbar Styling */
 nav {
-    background-color: rgba(255, 255, 255, 0.70);
+    background-color: rgba(255, 255, 255, 0.80);
     position: absolute;
     width: 100vw;
     font-family: 'Cera Pro Bold', sans-serif;
+    font-weight: 700;
 }
 
 .nav-item-container {
@@ -95,7 +96,8 @@ nav {
     .nav-links {
         position: fixed;
         right: 0;
-        height: 30vh;
+        /* height: 30vh; */
+        height: 100vh;
         top: 8vh;
         display: flex;
         width: 100%;
@@ -117,7 +119,7 @@ nav {
 }
 
 /* For phones*/
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767px) { 
     .logo img {
         height: 30px;
     }
